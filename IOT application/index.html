@@ -1,0 +1,502 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sumon Rahman">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Smart Home Control Page</title>
+   
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+</head>
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+   <script type="text/javascript" src="js/client.js"></script>
+    <div class="preloader">
+        <span><i class="lnr lnr-sun"></i></span>
+    </div>
+    
+                <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="primary_menu">
+                            <ul class="nav navbar-nav mainmenu">
+                                <li class="active"><a href="#home_page">Home</a></li>
+                                <li><a href="#features_page">Features</a></li>
+                                <li><a href="#about_page">Control Kitchen</a></li>
+                                <li><a href="#price_page">Control Home</a></li>
+                                <li><a href="#contact_page">Contacts</a></li>
+                            </ul>
+                            <div class="right-button hidden-xs">
+                                <a href="#" data-toggle="modal" data-target="#ModalCenterLogin">Sign In</a>
+                                <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#ModalCenterSignup">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+    
+    
+    <div class="modal fade" id="ModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true"  style="position:absolute; top:60px;">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+                     
+                      <h3 class="modal-title" id="ModalLongTitle" align="center">LOGIN </h3>
+				  </div>
+				  <div class="modal-body">
+				   <form  style="position:auto">
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Remember the password</label>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+    
+    
+    
+    
+    
+    <div class="modal fade" id="ModalCenterSignup" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                   <div class="modal-header">
+                   <h5 class="modal-title" id="ModalLongTitle">SIGNUP</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                   </button>
+                   </div>
+                   <div class="modal-body">
+       	           <form action="register.jsp" method="post">
+			       <div class="form-group">
+			       <label for="name">Full Name</label>
+			       <input type="text" name="name" class="form-control" placeholder="Full Name" id="name">
+                       <label for="uname">User Name</label>
+			       <input type="text" name="uname" class="form-control" placeholder="User Name" id="uname">
+                       
+						<label for="email">Email Address</label>
+                        <input type="text" name="email" class="form-control" placeholder="Email ID" id="email">
+						<label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" id="password">
+                          </br>  <button type="submit" class="btn btn-primary">Register</button>
+
+			  </div>
+			  </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <header class="home-area overlay" id="home_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hidden-sm col-md-5">
+                    <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="images/header-mobile.png" alt="">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="space-80 hidden-xs"></div>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">Start a new innovation in technology. Control Home</h1>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                        <p>Description To Be Filled.</p>
+                    </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    <!-- Home-Area-End -->
+    <!-- About-Area -->
+    <section class="section-padding" id="about_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="page-title text-center">
+                        <img src="images/logo.png" alt="About Logo">
+                        <div class="space-20"></div>
+                        <h5 class="title">About Our Control System</h5>
+                        <div class="space-30"></div>
+                        <h3 class="blue-color">A Beautifully Designed Home Control System Designed By Technical Noobs</h3>
+                        <div class="space-20"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Area-End -->
+         <section class="feature-area section-padding-top" id="features_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h5 class="title">Features</h5>
+                        <div class="space-10"></div>
+                        <h3>Pwoerful Features As Always</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-rocket"></i>
+                        </div>
+                        <h4>Fast &amp; Powerful</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-paperclip"></i>
+                        </div>
+                        <h4>Easily Editable</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cloud-download"></i>
+                        </div>
+                        <h4>Cloud Storage</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-4">
+                    <figure class="mobile-image">
+                        <img src="images/feature-image.png" alt="Feature Photo">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-clock"></i>
+                        </div>
+                        <h4>Easy Notifications</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div>
+                        <h4>Fully Responsive</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cog"></i>
+                        </div>
+                        <h4>Editable Layout</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature-Area-End -->
+       
+
+    <!-- Progress-Area -->
+    <section class="progress-area gray-bg" id="progress_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="page-title section-padding">
+                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">KITCHEN</h5>
+                        <div class="space-10"></div>
+                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">LEVEL OF SMOKE DETECTOR</h3>
+                        <div class="space-20"></div>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                            <p>40% NORMAL</p>
+                            <p>50% PRETTY COOL !!</p>
+                            <p>60% WARNING</p>
+                            <p>80% DANGER !! Action Required !!</p>
+                        </div>
+                        <div class="space-50"></div>
+                        <div class="progress" >
+                            <div class="progress-bar progress-bar-success" id="smokeProgress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    40% Complete (success)
+                        </div>
+ 
+                        </div>
+                                                   <button class="btn btn-primary" id="progressButton">Press</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <figure class="mobile-image">
+                        <span class="lnr lnr-smile"></span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+   
+    <!--Price-Area -->
+    <section class="section-padding price-area" id="price_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Control Home</h5>
+                        <h3 class="dark-color">Controlling Different Rooms in Home</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-home"></span>
+                            </div>
+                            <h4 class="upper">LIVING ROOM</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Light    <label class="switch">
+                            <input data-toggle="toggle" data-onstyle="success" data-offstyle="danger"
+			    type="checkbox" data-gpio="2" class="gpio-checkbox">
+                            <span class="slider round"></span>
+                            </label></li>
+                                <li>Fan        <label class="switch">
+                            <input data-toggle="toggle" data-onstyle="success" data-offstyle="danger"
+			    type="checkbox" data-gpio="3" class="gpio-checkbox">
+                            <span class="slider round"></span>
+                            </label></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-construction"></span>
+                            </div>
+                            <h4 class="upper">BEDROOM</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <ul>
+                                <li>Light    <label class="switch">
+                            <input data-toggle="toggle" data-onstyle="success" data-offstyle="danger"
+			    type="checkbox" data-gpio="4" class="gpio-checkbox">
+                            <span class="slider round"></span>
+                            </label></li>
+                                <li>Fan        <label class="switch">
+                            <input data-toggle="toggle" data-onstyle="success" data-offstyle="danger"
+			    type="checkbox" data-gpio="5" class="gpio-checkbox">
+                            <span class="slider round"></span>
+                            </label></li>
+                            </ul>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-poop"></span>
+                            </div>
+                            <h4 class="upper">BATHROOM</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Light    <label class="switch">
+                            <input data-toggle="toggle" data-onstyle="success" data-offstyle="danger"
+			    type="checkbox" data-gpio="6" class="gpio-checkbox">
+                            <span class="slider round"></span>
+                            </label></li>
+                               
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Price-Area-End -->
+    <!-- Subscribe-Form -->
+    <div class="subscribe-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="subscribe-form text-center">
+                        <h3 class="blue-color">Subscribe for More Features</h3>
+                        <div class="space-20"></div>
+                        <form id="mc-form">
+                            <input type="email" class="control" placeholder="Enter your email" required="required" id="mc-email">
+                            <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span> Subscribe</button>
+                            <label class="mt10" for="mc-email"></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe-Form-Area -->
+    <!-- Footer-Area -->
+    <footer class="footer-area" id="contact_page">S
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-title text-center">
+                            <h5 class="title">Contact US</h5>
+                            <h3 class="dark-color">Find Us By Bellow Details</h3>
+                            <div class="space-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-map-marker"></span>
+                            </div>
+                            <p>8-54 Paya Lebar Square <br /> 60 Paya Lebar Roa SG, Singapore</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                            <p>+65 93901336 <br /> +65 93901337</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                            <p>yourmail@gmail.com <br /> backpiper.com@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="lnr lnr-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom-End -->
+    </footer>
+    <!-- Footer-Area-End -->
+        
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDAVY8UL-u5X5KRBylSFOJWYnPWRKc_bzo",
+    authDomain: "smarthome-bbe25.firebaseapp.com",
+    databaseURL: "https://smarthome-bbe25.firebaseio.com",
+    projectId: "smarthome-bbe25",
+    storageBucket: "smarthome-bbe25.appspot.com",
+    messagingSenderId: "39691701145"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/ajaxchimp.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
